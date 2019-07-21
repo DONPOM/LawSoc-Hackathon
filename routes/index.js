@@ -11,8 +11,8 @@ router.get('/parties', function(req, res, next) {
   res.render('parties', { title: 'Parties' });
 });
 
-router.get('/tasks', function(req, res, next) {
-  res.render('tasks', { title: 'Tasks' });
+router.get('/documents', function(req, res, next) {
+  res.render('documents', { title: 'Documents' });
 });
 
 router.get('/conversations', function(req, res, next) {
