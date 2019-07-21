@@ -7,3 +7,7 @@
 .hide-it {
   display: none;
 }
+
+.grey-out {
+  color: grey;
+}
