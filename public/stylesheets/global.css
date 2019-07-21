@@ -14,7 +14,6 @@
 
 .progress-table {
   width: 100%;
-  color: white;
 }
 
 .progress-complete {
@@ -31,6 +30,7 @@
 
 .progress-cell {
   padding: 10px;
+  border-right: #A8A8A8 solid 1px;
 }
 
 .cost-assessment {

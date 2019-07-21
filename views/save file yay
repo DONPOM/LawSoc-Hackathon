@@ -214,3 +214,69 @@ window.onload = function(){
 
 };
 </script>
+
+
+
+
+
+
+
+<div class="box">
+  <div class="box-header">
+    <h3 class="box-title">Progress</h3>
+  </div>
+  <!-- /.box-header -->
+  <div class="box-body ">
+
+    <h3>Settlement</h3>
+    <table class="progress-table">
+      <tr>
+        <td class="progress-cell progress-complete">
+          Offer Made
+        </td>
+        <td class="progress-cell progress-complete">
+          Counter Offer Made
+        </td>
+        <td class="progress-cell progress-complete">
+          Outcome: Rejected
+        </td>
+      </tr>
+    </table>
+
+    <h3>Costs Assessments Application</h3>
+    <table class="progress-table">
+      <tr>
+        <td class="progress-cell progress-in-progress">
+          Application Preperation
+        </td>
+        <td class="progress-cell progress-grey">
+          Application Submission
+        </td>
+        <td class="progress-cell progress-grey">
+          Application Received
+        </td>
+        <td class="progress-cell progress-grey">
+          Application Approval
+        </td>
+        <td class="progress-cell progress-grey">
+          Cost Estimate
+        </td>
+      </tr>
+    </table>
+
+    <h3>Costs Assessment</h3>
+    <table class="progress-table">
+      <tr>
+        <td class="progress-cell progress-grey">
+          Assessor Assignment
+        </td>
+        <td class="progress-cell progress-grey">
+          Bill Assessment
+        </td>
+        <td class="progress-cell progress-grey">
+          Outcome:
+        </td>
+      </tr>
+    </table>
+</div>
+</div>
