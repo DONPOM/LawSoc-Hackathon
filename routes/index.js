@@ -7,6 +7,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Workspace' });
 });
 
+router.get('/createWorkspace', function(req, res, next) {
+  res.render('createWorkspace', { title: 'Create Workspace' });
+});
+
 router.get('/parties', function(req, res, next) {
   res.render('parties', { title: 'Parties' });
 });

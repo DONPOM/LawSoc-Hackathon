@@ -32,3 +32,9 @@
 .progress-cell {
   padding: 10px;
 }
+
+.cost-assessment {
+  color: grey;
+  text-align: center;
+  width:100%;
+}
