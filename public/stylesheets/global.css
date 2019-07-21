@@ -11,3 +11,24 @@
 .grey-out {
   color: grey;
 }
+
+.progress-table {
+  width: 100%;
+  color: white;
+}
+
+.progress-complete {
+  background-color: green;
+}
+
+.progress-in-progress {
+  background-color: orange;
+}
+
+.progress-grey {
+  background-color: grey;
+}
+
+.progress-cell {
+  padding: 10px;
+}
