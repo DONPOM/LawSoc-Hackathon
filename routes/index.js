@@ -7,6 +7,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Workspace' });
 });
 
+router.get('/parties', function(req, res, next) {
+  res.render('parties', { title: 'Parties' });
+});
+
 router.get('/tasks', function(req, res, next) {
   res.render('tasks', { title: 'Tasks' });
 });
@@ -25,6 +29,18 @@ router.get('/compose', function(req, res, next) {
 
 router.get('/viewMessage', function(req, res, next) {
   res.render('viewMessage', { title: 'View Message' });
+});
+
+router.get('/files', function(req, res, next) {
+  res.render('files', { title: 'Files' });
+});
+
+router.get('/settlement', function(req, res, next) {
+  res.render('settlement', { title: 'Settlement' });
+});
+
+router.get('/costAssessment', function(req, res, next) {
+  res.render('costAssessment', { title: 'Cost Assessment' });
 });
 
 router.post('/login', function(req, res, next){
