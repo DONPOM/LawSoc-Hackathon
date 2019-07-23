@@ -50,32 +50,91 @@
   </div>
   <!-- /.box-header -->
   <div class="box-body give-padding">
+    <table>
 
-    <input type="checkbox" class="flat-green">  &nbsp; Did you first instruct the Law Practice in the matter to which the costs relate <strong>before 1 July 2015</strong>?
-    <br><br>
-    <div class="form-group">
-      <label for="exampleFormControlLaw">Total amount that the Law Practice claimed for the costs that you want assessed?</label>
-      <input class="form-control" type="number" id="exampleFormControlLaw" placeholder="Respondent" value="168,000">
-    </div>
+      <tr>
+        <th width="10%"></th>
+        <th width="90%"></th>
+      </tr>
 
-    How much of the claimed amount has been paid? Spicify the date and amount of each payment
-    <div class="row">
-      <div class="col-md-3">
-        <div class="form-group">
-          <label for="exampleFormControlLaw">Date</label>
-          <input class="form-control" type="text" id="exampleFormControlLaw" placeholder="Respondent" value="Theile Solicitors">
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="form-group">
-          <div class="input-group mb-5">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1">$</span>
-            </div>
-            <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+
+      <tr>
+        <td>1.</td>
+        <td>
+          <input type="checkbox" class="flat-green">  &nbsp; Did you first instruct the Law Practice in the matter to which the costs relate <strong>before 1 July 2015</strong>?
+          <br><br>
+        </td>
+      </tr>
+
+      <tr>
+        <td>2.</td>
+        <td>
+          <div class="form-group">
+            <label for="exampleFormControlLaw">Total amount that the Law Practice claimed for the costs that you want assessed?</label>
+            <input class="form-control" type="text" id="total-claimed" value="168000">
           </div>
-        </div>
-      </div>
+        </td>
+      </tr>
 
+      <tr>
+        <td> 3.</td>
+        <td>
+          How much of the claimed amount has been paid? Spicify the date and amount of each payment<br>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <div class="input-group mb-2">
+                  <div class="input-group-addon"><i class="fa fa-calendar"></i> </div>
+                  <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="form-group">
+                <div class="input-group mb-5">
+                  <div class="input-group-addon">$</div>
+                  <input type="text" class="form-control" id="payments" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <div class="input-group mb-2">
+                  <button type="button" class="btn btn-block btn-primary btn-sm">Add Feild</button>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>4.</td>
+          <td>
+            <div class="form-group">
+              <label for="exampleFormControlLaw">How much of the claimed amount do you object to?<br>(This should be the difference between part 2 and 3)</label>
+              <input class="form-control" type="text" id="objected-amount" value="168,000">
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>5.</td>
+          <td>
+            <div class="form-group">
+              <label for="exampleFormControlLaw">Set out any further information that you say is relevant to the assessment of the costs</label>
+              <textarea class="form-control" type="text" value=""></textarea>
+            </div>
+          </td>
+        </tr>
+
+
+
+
+
+        </table>
+
+
+
+
+      </div>
     </div>
-  </div>
