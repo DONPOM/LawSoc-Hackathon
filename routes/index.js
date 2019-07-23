@@ -7,6 +7,28 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Workspace' });
 });
 
+router.post('/billing', function(req, res, next) {
+  let cost = req.body.amountForObjection;
+  let estAmount = req.body.amountProposed;
+  let amount = req.body.totalClaimed;
+  let paid = req.body.paid;
+  let a = cost*0.01;
+  let b = (amount-paid)*0.1;
+  let c = 100;
+  let fee;
+  if (a > b && a > c) {
+    fee = "1% of the amount in dispute."
+    cost = a
+  } else if (b > a && b > c){
+    fee = "1% of the remaining unpaid amount."
+    cost = b;
+  } else {
+    fee = "Minimum application fee."
+    cost = c;
+  }
+  res.render('billing', { title: 'Application Fee', cost: cost, fee: fee});
+});
+
 router.get('/createApplication', function(req, res, next) {
   res.render('createApplication', { title: 'Create Application' });
 });

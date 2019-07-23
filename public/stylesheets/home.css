@@ -1,18 +1,36 @@
-
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap');
 
 
 body {
   margin: auto;
+  font-family: "Darker Grotesque";
+  font-weight: bolder;
 }
 
 #blue-div {
   height: 230px;
-  background-color: #0052cc;
+  background-color: #16517d;
+}
+
+#white-div {
+  padding: 15px;
+  text-align: center;
 }
 
 
 
-
 .user-box {
+  height: 150px;
+  width: 150px;
+  background-color: #16517d;
+  margin: 15px;
+  color: white;
+  border-radius: 5px;
+  padding: 15px;
+}
 
+#flex-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

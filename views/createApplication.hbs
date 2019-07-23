@@ -4,7 +4,7 @@
 
 <div class="box">
   <div class="box-header">
-    <h3 class="box-title">Details</h3>
+    <h3 class="box-title">Payment Summary</h3>
   </div>
   <!-- /.box-header -->
   <div class="box-body give-padding">
@@ -50,6 +50,7 @@
   </div>
   <!-- /.box-header -->
   <div class="box-body give-padding">
+    <form action="/billing" method="POST">
     <table>
 
       <tr>
@@ -61,7 +62,8 @@
       <tr>
         <td>1.</td>
         <td>
-          <input type="checkbox" class="flat-green">  &nbsp; Did you first instruct the Law Practice in the matter to which the costs relate <strong>before 1 July 2015</strong>?
+          Did you first instruct the Law Practice in the matter to which the costs relate <strong>before 1 July 2015</strong>?  &nbsp;
+          <br><input type="radio" name="abc" class="flat-green"> Before 1 July 2015 <br><input type="radio" name="abc" class="flat-green"> On or after
           <br><br>
         </td>
       </tr>
@@ -71,7 +73,7 @@
         <td>
           <div class="form-group">
             <label for="exampleFormControlLaw">Total amount that the Law Practice claimed for the costs that you want assessed?</label>
-            <input class="form-control" type="text" id="total-claimed" value="168000">
+            <input class="form-control" type="text" name="totalClaimed" id="total-claimed" value="168000">
           </div>
         </td>
       </tr>
@@ -85,7 +87,7 @@
               <div class="form-group">
                 <div class="input-group mb-2">
                   <div class="input-group-addon"><i class="fa fa-calendar"></i> </div>
-                  <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                  <input type="number" class="form-control">
                 </div>
               </div>
             </div>
@@ -93,14 +95,14 @@
               <div class="form-group">
                 <div class="input-group mb-5">
                   <div class="input-group-addon">$</div>
-                  <input type="text" class="form-control" id="payments" aria-label="Username" aria-describedby="basic-addon1">
+                  <input type="text" class="form-control" id="" aria-label="Username" name="paid" aria-describedby="basic-addon1">
                 </div>
               </div>
             </div>
             <div class="col-md-3">
               <div class="form-group">
                 <div class="input-group mb-2">
-                  <button type="button" class="btn btn-block btn-primary btn-sm">Add Feild</button>
+                  <button type="button" class="btn btn-block btn-primary btn-sm">Add</button>
                 </div>
               </div>
             </div>
@@ -110,9 +112,13 @@
         <tr>
           <td>4.</td>
           <td>
+
             <div class="form-group">
-              <label for="exampleFormControlLaw">How much of the claimed amount do you object to?<br>(This should be the difference between part 2 and 3)</label>
-              <input class="form-control" type="text" id="objected-amount" value="168,000">
+              How much do you feel is the proper amount for those costs?<br>(Do not subtract amounts that have been paid.)
+              <div class="input-group mb-5">
+                <div class="input-group-addon">$</div>
+                <input class="form-control" type="text" name="amountProposed" id="payments" value="">
+              </div>
             </div>
           </td>
         </tr>
@@ -120,8 +126,22 @@
         <tr>
           <td>5.</td>
           <td>
+
             <div class="form-group">
-              <label for="exampleFormControlLaw">Set out any further information that you say is relevant to the assessment of the costs</label>
+              How much of the claimed amount do you object to?<br>(This should be the difference between part 2 and 3)
+              <div class="input-group mb-5">
+                <div class="input-group-addon">$</div>
+                <input class="form-control" type="text" name="amountForObjection" id="objected-amount" value="168,000">
+              </div>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>6.</td>
+          <td>
+            <div class="form-group">
+              <label for="exampleFormControlLaw">Set out any further information that you say is relevant to the assessment of the costs.</label>
               <textarea class="form-control" type="text" value=""></textarea>
             </div>
           </td>
@@ -132,6 +152,12 @@
 
 
         </table>
+        <div class="row">
+          <div class="col-md-4">
+          <button type="button" class="btn btn-block btn-primary btn-sm">Save</button>
+        </div>
+        <div class="col-md-4"><button type="submit" class="btn btn-block btn-primary btn-sm">Submit</button></div>
+      </form>
 
 
 

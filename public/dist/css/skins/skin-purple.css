@@ -26,10 +26,10 @@
   background: rgba(0, 0, 0, 0.1);
 }
 .skin-purple .main-header .navbar .sidebar-toggle {
-  color: #fff;
+  color: #16517d;
 }
 .skin-purple .main-header .navbar .sidebar-toggle:hover {
-  background-color: #555299;
+  background-color: #fff;
 }
 @media (max-width: 767px) {
   .skin-purple .main-header .navbar .dropdown-menu li.divider {
@@ -43,12 +43,12 @@
   }
 }
 .skin-purple .main-header .logo {
-  background-color: #0052cc;
+  background-color: #16517d;
   color: #ffffff;
   border-bottom: 0 solid transparent;
 }
 .skin-purple .main-header .logo:hover {
-  background-color: #0066ff;
+  background-color: #1b6298;
 }
 .skin-purple .main-header li.user-header {
   background-color: #605ca8;
@@ -59,7 +59,7 @@
 .skin-purple .wrapper,
 .skin-purple .main-sidebar,
 .skin-purple .left-side {
-  background-color: #0052cc;
+  background-color: #16517d;
 }
 .skin-purple .user-panel > .info,
 .skin-purple .user-panel > .info > a {
