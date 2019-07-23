@@ -1,23 +1,51 @@
-<html>
-<head>
-  <link rel="stylesheet" href="stylesheets/home.css">
-</head>
+  <!doctype html>
+  <html lang="en">
+    <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="stylesheets/home.css">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-<body>
-  <div id="blue-div">
-  </div>
-  <div id="white-div">
-    New User:
-    <div id="flex-cont">
+      <title>CAS</title>
+    </head>
+    <body>
+      <div id="blue-div">
+        <div id="blue-container">
+          <div id="blue-flex"><div><img src="img/caslogo.png" alt="cas" height="110px"></div><div id="cas-slogan">A digital workspace that streamlines<br> your cost assessment, end to end.</div></div>
+        </div>
+      </div>
+      <div id="white-div">
+        New User:
+        <div id="flex-cont">
 
-      <div class="user-box">Legal Practitioner</div>
-      <div class="user-box">Cost Assessor</div>
-      <div class="user-box">Self-Represent</div>
-    </div>
-    <div id="login-cont">
+          <div class="user-box">Legal <br>Practitioner<div class="user-icon"><i class="fas fa-briefcase"></i></div></div>
+          <div class="user-box">Cost Assessor<br><br><div class="user-icon"><i class="fas fa-balance-scale"></i></div></div>
+          <div class="user-box">Self-Represent<br><br><div class="user-icon"><i class="fas fa-user"></i></div></div>
+        </div>
+        <div id="login-flex">
+          <div id="login-container">
+            Existing User: <br><br>
+            <div class="form-group">
+              <input class="form-control" type="text" id="exampleFormControlLaw" placeholder="Username" value="">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="password" id="exampleFormControlLaww" placeholder="Password" value="">
+            </div>
+            <button type="button" onClick="redirect()" class="btn btn-block btn-light btn-sm">Log In</button>
+          </div>
 
-    </div>
-  </div>
-</body>
+        </div>
+      </div>
 
-</html>
+      <script src="javascripts/home.js"></script>
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+  </html>

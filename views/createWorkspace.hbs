@@ -38,7 +38,7 @@
   </div>
 </div>
 
-<div class="box">
+<div id="case-parties" class="box hide-it">
   <div class="box-header">
     <h3 class="box-title">Parties</h3>
   </div>
@@ -53,28 +53,59 @@
       </tr>
       <tr>
         <td>Cindy Wright</td>
-        <td>Applicant</td>
-        <td>cindwright@company.com</td>
         <td>
+
           <div class="btn-group">
-            <button type="button" class="btn btn-default">Action</button>
+            <button type="button" class="btn btn-default">Role</button>
             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
               <span class="caret"></span>
               <span class="sr-only">Toggle Dropdown</span>
             </button>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#" >View</a></li>
-              <li><a href="#">Edit</a></li>
-              <li class="hide-it"><a href="#" >Submit</a></li>
+              <li><a href="#">Applicant</a></li>
+              <li><a href="#">Respondent</a></li>
+              <li class="hide-it"><a href="#">Submit</a></li>
             </ul>
           </div>
+
+        </td>
+        <td>cindwright@company.com</td>
+        <td>
+
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-default">Action</button>
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Applicant</a></li>
+                        <li><a href="#">Respondent</a></li>
+                        <li class="hide-it"><a href="#">Submit</a></li>
+                      </ul>
+                    </div>
         </td>
       </tr>
 
 
       <tr>
         <td>Peter Theile</td>
-        <td>Respondent</td>
+        <td>
+
+          <div class="btn-group">
+            <button type="button" class="btn btn-default">Role</button>
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+              <span class="caret"></span>
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Applicant</a></li>
+              <li><a href="#">Respondent</a></li>
+              <li class="hide-it"><a href="#">Submit</a></li>
+            </ul>
+          </div>
+
+        </td>
         <td>peter.theile@differentco.com</td>
         <td>
           <div class="btn-group">
@@ -93,6 +124,10 @@
       </tr>
     </table>
       <br><button type="button" class="btn btn-block btn-primary btn-sm">Invite Party</button>
+      <br><button type="button" onclick="redirect()" class="btn btn-block btn-primary btn-sm">Go to workspace</button>
   </div>
   <!-- /.box-body -->
 </div>
+
+
+<script src="javascripts/billing.js"></script>

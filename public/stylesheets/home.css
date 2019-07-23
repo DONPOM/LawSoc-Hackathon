@@ -8,8 +8,9 @@ body {
 }
 
 #blue-div {
-  height: 230px;
+  height: 150px;
   background-color: #16517d;
+  padding: 15px;
 }
 
 #white-div {
@@ -17,7 +18,16 @@ body {
   text-align: center;
 }
 
+#blue-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+#cas-slogan {
+  color: white;
+  font-size: 20px;
+}
 
 .user-box {
   height: 150px;
@@ -33,4 +43,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#login-container {
+  margin: 10px;
+  padding: 20px;
+  background-color: #16517d;
+  color: white;
+  max-width: 400px;
+  border-radius: 5px;
+}
+
+#login-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-icon {
+  font-size: 50px;
+  margin-bottom: 0px;
 }

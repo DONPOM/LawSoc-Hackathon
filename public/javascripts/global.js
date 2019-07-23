@@ -10,6 +10,7 @@ setTimeout(function(){
 function showCaseDetails() {
   document.getElementById("case-valid").classList.remove("hide-it");
   document.getElementById("case-details").classList.remove("hide-it");
+  document.getElementById("case-parties").classList.remove("hide-it");
 }
 
 $("#payments").change(function(){
@@ -17,3 +18,8 @@ $("#payments").change(function(){
   let b = document.getElementById('total-claimed').value;
   document.getElementById('objected-amount').value = b-a;
 });
+
+
+function redirectDoc() {
+  window.location.replace("/documents");
+}
