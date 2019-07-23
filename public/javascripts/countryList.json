@@ -1,0 +1,32 @@
+{
+  "matters": [
+    {
+      "matter": "Administrative Law",
+      "sub": ["Tax"]
+    },
+    {
+      "matter": "Commercial",
+      "sub": ["Commercial arbitration (with a Court order if under LPA)","Insurance","Corporations Law","Building and construction"]
+    },
+    {
+      "matter": "Common Law",
+      "sub": ["Defamation","Personal Injury - including public liability","Motor Vehicle Accidents","Proffessional Negligence","Possession"]
+    },
+    {
+      "matter": "Equity (General)",
+      "sub": ["Family Provision","Guardianship, de facto relationships","Probate"]
+    },
+    {
+      "matter": "Land and Enviroment Court",
+      "sub": ["N/A"]
+    },
+    {
+      "matter": "Tribunals",
+      "sub": ["Dust Diseases Tribunal","NCAT","Other Tribunal"]
+    },
+    {
+      "matter": "Other",
+      "sub": ["Criminal","Family Law","General Feberal Law","Industrial","Workers Compensation","Property - including conveyencing", "Other"]
+    }
+  ]
+}

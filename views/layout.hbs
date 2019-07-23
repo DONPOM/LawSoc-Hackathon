@@ -59,18 +59,20 @@ desired effect
 |               | sidebar-mini                            |
 |---------------------------------------------------------|
 -->
-<body class="hold-transition fixed skin-purple sidebar-mini">
+<body class="hold-transition fixed skin-purple sidebar-mini sidebar-collapse">
 <div class="wrapper">
 
   <!-- Main Header -->
   <header class="main-header">
 
     <!-- Logo -->
-    <a href="/" class="logo">
+    <a href="/home" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><span class="waivel-logo">CAS</span></span>
+      <span class="logo-mini">
+        <img src="img/cas.png" height="40" alt="cas">
+      </span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><span class="waivel-logo">CAS</span></span>
+      <span class="logo-lg">  <img src="img/cas.png" height="40" alt="cas"></span>
     </a>
 
     <!-- Header Navbar -->
@@ -208,9 +210,9 @@ desired effect
             <!-- Menu Toggle Button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <!-- The user image in the navbar-->
-              <img src="dist/img/user7-128x128.jpg" class="user-image" alt="User Image">
+              <!--<img src="dist/img/user7-128x128.jpg" class="user-image" alt="User Image"> -->
               <!-- hidden-xs hides the username on small devices so only the image appears. -->
-              <span class="hidden-xs">Cindy Wright</span>
+              <span class="hidden-xs">Wright Solicitors</span>
             </a>
             <ul class="dropdown-menu">
               <!-- The user image in the menu -->
@@ -249,24 +251,14 @@ desired effect
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
 
-      <!-- Sidebar user panel (optional) -->
-      <div class="user-panel">
-        <div class="pull-left image">
-          <img src="dist/img/user7-128x128.jpg" class="img-circle" alt="User Image">
-        </div>
-        <div class="pull-left info">
-          <p>Cindy</p>
-          <!-- Status -->
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-        </div>
-      </div>
 
 
       <!-- Sidebar Menu -->
       <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">NAVIGATION</li>
+        <!--<li class="header">NAVIGATION</li>-->
 
         <!-- Optionally, you can add icons to the links -->
+        <li id="waivel-menu-forms">&nbsp;</li>
         <li id="waivel-menu-forms"><a  href="/parties"><i class="fa fa-users"></i> <span>Parties</span></a></li>
         <li id="waivel-menu-forms"><a  href="/"><i class="fa fa-desktop"></i> <span>Workspace</span></a></li>
         <li id="waivel-menu-forms"><a  href="/documents"><i class="fa  fa-file"></i> <span>Documents</span></a></li>
@@ -308,6 +300,8 @@ desired effect
     </div>
     <!-- Default to the left -->
     <strong>Copyright &copy; 2019 <a href="#">Cost Assessment Solutions</a>.</strong> All rights reserved.
+    <a href="/#">Privacy Policy </a> | <a href="/#">About Us </a> | <a href="/#">Terms of Use </a> | Language: <img src="img/uk.png" alt="UK" height="18px"> <img src="img/france.png" alt="UK" height="18px">
+    <img src="img/china.png" alt="UK" height="18px"> <img src="img/russia.png" alt="UK" height="18px"> <img src="img/spain.png" alt="UK" height="18px">
   </footer>
 
   <!-- Control Sidebar -->
@@ -399,7 +393,9 @@ desired effect
 <script src="dist/js/adminlte.min.js"></script>
 
 <script src="bower_components/chart.js/Chart.js"></script>
+<script src="javascripts/application.js"></script>
 <script src="javascripts/global.js"></script>
+
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the

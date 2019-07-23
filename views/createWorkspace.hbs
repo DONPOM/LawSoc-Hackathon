@@ -3,48 +3,96 @@
     <h3 class="box-title">Details</h3>
   </div>
   <!-- /.box-header -->
-  <div class="box-body">
+  <div class="box-body give-padding">
 
 
     <div class="form-group">
       <label>Case</label>
 
-      <div class="input-group">
-        <input type="text" class="form-control " placeholder="">
+      <div class="input-group row">
+        <div class="col-md-6">
+          <input type="text" width="200px" class="form-control " format="\d{3}" placeholder="YYYY / case no.">
+        </div>
+        <div class="col-md-5">
+          <button type="button" onClick="showCaseDetails()" class="btn btn-block btn-primary btn-sm">Validate</button>
+        </div>
       </div>
+      <div id="case-valid" style="color:green" class="hide-it"><br><i class="fa fa-check-circle"></i> Validated </div>
       <!-- /.input group -->
     </div>
-    <button type="button" class="btn btn-block btn-primary btn-sm">Validate</button><br><br>
-
-
-
-    <div class="form-group">
-      <label for="exampleInputPassword1"> Parties</label>
-      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Cindy Wright, Peter Theile">
+    <div id="case-details" class="hide-it">
+      <table>
+        <tr>
+          <td>
+            Case title:<br>
+            Judgment Date:<br>
+          </td>
+          <td>
+            <strong>&nbsp; Malki v Yong</strong><br>
+            <strong>&nbsp; 17th July 2019</strong><br>
+          </td>
+        </tr>
+      </table>
     </div>
 
-    Details:
-    <div class="form-group">
-      <label for="exampleInputPassword1">1. </label>
-      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="The defendant will pay the plaintiff the amount of $3,500 on or before 31 December 2019.">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">2. </label>
-      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="The defendant will not be liable to pay any additional interest if she pays $3,500 by 31 December 2019.">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">3. </label>
-      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="If the defendant fails to pay $3,500 on or before 31 December 20xx, the plaintiff reserves the right to recommence legal proceedings against the defendant without notice for the full $4,000 claimed, plus interest and costs.">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">4. </label>
-      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">5. </label>
-      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
-    </div>
+  </div>
+</div>
 
+<div class="box">
+  <div class="box-header">
+    <h3 class="box-title">Parties</h3>
+  </div>
+  <!-- /.box-header -->
+  <div class="box-body">
+    <table class="table table-striped">
+      <tr>
+        <th style="width: 200px">Name</th>
+        <th>Type</th>
+        <th>Contact</th>
+        <th >actions</th>
+      </tr>
+      <tr>
+        <td>Cindy Wright</td>
+        <td>Applicant</td>
+        <td>cindwright@company.com</td>
+        <td>
+          <div class="btn-group">
+            <button type="button" class="btn btn-default">Action</button>
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+              <span class="caret"></span>
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#" >View</a></li>
+              <li><a href="#">Edit</a></li>
+              <li class="hide-it"><a href="#" >Submit</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>Peter Theile</td>
+        <td>Respondent</td>
+        <td>peter.theile@differentco.com</td>
+        <td>
+          <div class="btn-group">
+            <button type="button" class="btn btn-default">Action</button>
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+              <span class="caret"></span>
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">View</a></li>
+              <li><a href="#">Edit</a></li>
+              <li class="hide-it"><a href="#">Submit</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+    </table>
+      <br><button type="button" class="btn btn-block btn-primary btn-sm">Invite Party</button>
   </div>
   <!-- /.box-body -->
 </div>
