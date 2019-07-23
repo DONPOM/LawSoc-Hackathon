@@ -7,6 +7,14 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Workspace' });
 });
 
+router.get('/workspaceOffer', function(req, res, next) {
+  res.render('workspaceOffer', { title: 'Workspace' });
+});
+
+router.get('/workspaceUpdated', function(req, res, next) {
+  res.render('workspaceUpdated', { title: 'Workspace' });
+});
+
 router.post('/billing', function(req, res, next) {
   let cost = req.body.amountForObjection;
   let estAmount = req.body.amountProposed;

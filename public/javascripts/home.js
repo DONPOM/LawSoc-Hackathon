@@ -8,3 +8,8 @@ function redirect() {
 function redirectDocs() {
   window.location.replace("/documents");
 }
+
+
+function redirectNewWorkspace() {
+  window.location.replace("/workspaceUpdated");
+}
