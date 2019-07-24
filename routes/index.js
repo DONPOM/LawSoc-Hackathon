@@ -8,7 +8,22 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/flip', function(req, res, next) {
-  res.render('conference', { title: 'FLIP', layout: false });
+
+  let visit = new database.visits();
+  visit.data = "Another one ites the dust: ";
+  visit.save(function(err, visit){
+    if (err) {
+      res.render('conference', { title: 'FLIP', layout: false, visits: "Too many to count..." });
+    } else {
+      database.visits.count(function(err, count){
+        if (err) {
+          res.render('conference', { title: 'FLIP', layout: false, visits: "Too many to count..." });
+        } else {
+          res.render('conference', { title: 'FLIP', layout: false, visits: count });
+        }
+      });
+    }
+  });
 });
 
 router.get('/workspaceOffer', function(req, res, next) {

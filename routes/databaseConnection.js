@@ -24,6 +24,10 @@ var BillSchema = Schema({
   total: Number
 });
 
+var VisitsSchema = Schema ({
+  data: String
+});
+
 
 
 
@@ -31,11 +35,13 @@ var BillSchema = Schema({
 var userModel = mongoose.model('Users', UserSchema);
 var eventModel = mongoose.model('Events', EventSchema);
 var billModel = mongoose.model('Bills', BillSchema);
+var visitsModel = mongoose.model('Visits', VisitsSchema);
 
 
 exports.user = userModel;
 exports.event = eventModel;
 exports.bill = billModel;
+exports.visits = visitsModel;
 
 
 
