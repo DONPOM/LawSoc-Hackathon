@@ -12,3 +12,8 @@ body {
   font-weight: bolder;
   font-family: Oswald;
 }
+
+.description a {
+  font-weight: normal;
+  font-size: 30px;
+}
