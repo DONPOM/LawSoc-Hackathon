@@ -9,12 +9,20 @@ body {
 }
 
 .description {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   font-weight: bolder;
 }
 
 .description a {
   font-weight: normal;
   font-size: 30px;
+}
+.visits {
+  padding: 30px;
+}
+
+.cas {
+  font-size: 120px;
+  padding: 20px;
 }
