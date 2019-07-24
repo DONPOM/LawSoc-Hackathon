@@ -7,6 +7,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Workspace' });
 });
 
+router.get('/flip', function(req, res, next) {
+  res.render('conference', { title: 'FLIP', layout: false });
+});
+
 router.get('/workspaceOffer', function(req, res, next) {
   res.render('workspaceOffer', { title: 'Workspace' });
 });

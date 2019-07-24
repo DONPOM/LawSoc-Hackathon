@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+body {
+  color: #16517d;
+  font-size: 60px;
+  text-align: center;
+}
+
+.description {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  font-weight: bolder;
+  font-family: Oswald;
+}
